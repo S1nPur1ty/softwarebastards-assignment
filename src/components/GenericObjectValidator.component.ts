@@ -5,8 +5,8 @@
  * @returns {boolean} Returns true if the object is valid, otherwise false.
  */
 const genericObjectValidator = <T extends Record<string, string>>(object: Record<string, any>, schema: T): boolean => {
-    for (const key in schema) {
-        if (schema[key] === undefined || !object.hasOwnProperty(key)) {
+    for ( const key in schema ) {
+        if ( schema[key] === undefined || !object.hasOwnProperty(key) ) {
             return false;
         }
 
@@ -14,7 +14,7 @@ const genericObjectValidator = <T extends Record<string, string>>(object: Record
         const keyElement: any = object[key];
         const keyType: string = Array.isArray(keyElement) ? 'array' : typeof keyElement;
 
-        if (keyType !== expectedType) {
+        if ( keyType !== expectedType ) {
             return false;
         }
     }

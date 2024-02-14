@@ -7,17 +7,17 @@ import GenericObjectValidator from './components/GenericObjectValidator.componen
 
 class Main {
     constructor() {
-        console.log('-- BAR --');
-        console.log('Should be true: ', GenericObjectValidator(barObj, barSchema));
-        console.log('Should be false: ', GenericObjectValidator(barObjF, barSchema));
+        console.log( '-- BAR --' );
+        console.log( 'Should be true: ', GenericObjectValidator(barObj, barSchema) );
+        console.log( 'Should be false: ', GenericObjectValidator(barObjF, barSchema) );
 
-        console.log('-- PERSON --');
-        console.log('Should be true: ', GenericObjectValidator(personObj, personSchema));
-        console.log('Should be false: ', GenericObjectValidator(personObjF, personSchema));
+        console.log( '-- PERSON --' );
+        console.log( 'Should be true: ', GenericObjectValidator(personObj, personSchema) );
+        console.log( 'Should be false: ', GenericObjectValidator(personObjF, personSchema) );
 
-        console.log('-- CAR --');
-        console.log('Should be true: ', GenericObjectValidator(carObj, carSchema));
-        console.log('Should be false: ', GenericObjectValidator(carObjF, carSchema));   
+        console.log( '-- CAR --');
+        console.log( 'Should be true: ', GenericObjectValidator(carObj, carSchema) );
+        console.log( 'Should be false: ', GenericObjectValidator(carObjF, carSchema) );
     }
 }
 
