@@ -8,14 +8,15 @@ Omdat we niet teveel van jouw tijd willen vragen, hebben we de opdracht zo opgez
 
 ## 1. Installeer npx and node
 
-## 2. Installeer het Node Modules
-```npm install```
-
-
-## 3. Initialiseer het project
+## 2. Initialiseer het project
 ```npm run start```
 
-## 4. Test het project
+--- UNIT TEST ---
+
+## 1. Installeer Node Modules
+```npm install```
+
+## 2. Test het project
 ```npm run test```
 
 ## Opdracht
