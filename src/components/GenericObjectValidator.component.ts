@@ -20,7 +20,6 @@ const genericObjectValidator = <T extends Record<string, string>>(object: Record
     }
     
     return true;
-
 };
 
 export default genericObjectValidator;
