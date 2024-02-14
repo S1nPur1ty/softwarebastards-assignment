@@ -18,7 +18,6 @@ const genericObjectValidator = <T extends Record<string, string>>(object: Record
             return false;
         }
     }
-
     
     return true;
 
