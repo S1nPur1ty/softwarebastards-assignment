@@ -8,12 +8,15 @@ Omdat we niet teveel van jouw tijd willen vragen, hebben we de opdracht zo opgez
 
 ## 1. Installeer npx and node
 
-## 2. Installeer de Node Modules
+## 2. Installeer het Node Modules
 ```npm install```
 
 
-## 3. Initialiseer de project
+## 3. Initialiseer het project
 ```npm run start```
+
+## 4. Test het project
+```npm run test```
 
 ## Opdracht
 Bij een denkbeeldige klant word je gevraagd om een validator te schrijven voor objecten. Dit omdat API responses niet altijd alle properties teruggeven die de software verwacht. De hoop is dat een object validator kan helpen met het sneller inzichtelijk maken van foutieve API responses of breaking changes.
