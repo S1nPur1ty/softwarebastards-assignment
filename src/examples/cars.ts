@@ -1,3 +1,10 @@
+type carType = {
+    brand: string,
+    type: string,
+    milage: number | string,
+    extras: object,
+};
+
 const carSchema = {
     brand: 'string',
     type: 'string',
@@ -6,7 +13,7 @@ const carSchema = {
 };
 
 // Validates true
-const carObj = {
+const carObj: carType = {
     brand: 'Mazda',
     type: 'MX5 NB 1.8',
     milage: 199999.99,
@@ -16,7 +23,7 @@ const carObj = {
 };
 
 // Validates false
-const carObjF = {
+const carObjF: carType = {
     brand: 'BMW',
     type: '335',
     milage: '100000', // < No number
@@ -26,4 +33,5 @@ const carObjF = {
     ],
 };
 
-module.exports = { carSchema, carObj, carObjF };
+export { carType, carSchema, carObj, carObjF };
+

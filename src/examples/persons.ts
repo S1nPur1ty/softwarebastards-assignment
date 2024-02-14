@@ -1,3 +1,11 @@
+type personType = {
+    name: string,
+    age: number,
+    siblings?: object,
+    metaData?: object,
+    active: boolean,
+};
+
 const personSchema = {
     name: 'string',
     age: 'number',
@@ -7,7 +15,7 @@ const personSchema = {
  };
 
 // Validates true
-const personObj = {
+const personObj: personType = {
     name: 'James',
     age: 25,
     siblings: ['Johnnathan'],
@@ -16,10 +24,10 @@ const personObj = {
 };
 
 // Validates false
-const personObjF = {
+const personObjF: personType = {
     name: 'James',
     age: 25,
     active: true,
 };
 
-module.exports = { personSchema, personObj, personObjF };
+export { personType, personSchema, personObj, personObjF };

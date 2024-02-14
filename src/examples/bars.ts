@@ -1,11 +1,18 @@
+type barType = {
+    name: string,
+    address: string,
+    drinks: object,
+};
+
 const barSchema = {
     name: 'string',
     address: 'string',
     drinks: 'object',
 };
 
+
 // Validates true
-const barObj = {
+const barObj: barType = {
     name: 'Jimmys drinks',
     address: 'Somewhere over the rainbow',
     drinks: {
@@ -14,7 +21,7 @@ const barObj = {
 };
 
 // Validates false
-const barObjF = {
+const barObjF: barType = {
     name: 'Sjonnies',
     address: 'Centrum 001',
     drinks: [ // < No object
@@ -22,4 +29,4 @@ const barObjF = {
     ]
 };
 
-module.exports = { barSchema, barObj, barObjF };
+export { barType, barSchema, barObj, barObjF };

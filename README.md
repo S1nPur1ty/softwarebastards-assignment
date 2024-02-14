@@ -6,8 +6,14 @@ Om jouw vaardigheden rondom Javascript te testen hebben we een kleine opdracht o
 
 Omdat we niet teveel van jouw tijd willen vragen, hebben we de opdracht zo opgezet dat deze in uiterlijk één uur uit te voeren is.
 
-## Opdracht runnen doe je zo
-```node test.js```
+## 1. Installeer npx and node
+
+## 2. Installeer de Node Modules
+```npm install```
+
+
+## 3. Initialiseer de project
+```npm run start```
 
 ## Opdracht
 Bij een denkbeeldige klant word je gevraagd om een validator te schrijven voor objecten. Dit omdat API responses niet altijd alle properties teruggeven die de software verwacht. De hoop is dat een object validator kan helpen met het sneller inzichtelijk maken van foutieve API responses of breaking changes.
